@@ -11,13 +11,91 @@
 </head>
 
 <body class="bg-danger p-3">
-    <div class="container bg-light p-3 text-center">
+    <main>
+        <div class="container m-auto my-2">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-white text-center text-uppercase fw-bold">calcola il prezzo del tuo biglietto </h1>
+                </div>
+            </div>
+        </div>
+        <div class="container bg-light shadow p-3 rounded-4">
+            <form class="row text-center" onsubmit="submitForm(event)" id="userForm">
+                <div class="col-4 mb-3">
+                    <label for="inputNameSurname" class="form-label text-danger">Nome e Cognome</label>
+                    <input type="text" class="form-control border-danger" id="inputNameSurname">
+                </div>
+                <div class="col-4 mb-3">
+                    <label for="inputKm" class="form-label text-danger">Km da percorrere</label>
+                    <input type="text" class="form-control border-danger" id="inputKm" />
+                </div>
+                <div class="col-4 mb-3">
+                    <label for="inputUserAge" class="form-label text-danger">Fascia di età
+                    </label>
+                    <select class="form-select border-danger" aria-label="inputUserAge">
+                        <option selected></option>
+                        <option value="1">Minorenne</option>
+                        <option value="2">Maggiorenne</option>
+                        <option value="3">Over 65</option>
+                    </select>
+                </div>
+                <div class="row text-center justify-content-center g-3">
+                    <button type="submit"
+                        class="btn border-dark bg-light text-danger fw-bold col-4 mx-3">Genera</button>
+                    <button type="button" class="btn border-dark bg-light text-danger fw-bold col-4">Annulla</button>
+                </div>
+            </form>
+        </div>
+        <div class="container m-auto">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-white text-center text-uppercase mt-4 fw-bold">Il tuo biglietto </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container bg-light pb-3 px-2">
+            <div class="row m-auto mx-2">
+                <div class="col-12">
+                    <h4 class="text-uppercase p-3">Dettaglio passeggeri</h4>
+                </div>
+            </div>
+            <div class="row border-top border-bottom border-secondary m-auto mx-2 ">
+                <div class="col bg-secondary">
+                    <h5 class="text-uppercase">Nome passeggero</h5>
+                    <!-- testo da cancellare  -->
+                    <p id="inputNameSurname" class="fw-bold">nome cogn</p>
+                </div>
+                <div class="col">
+                    <h6>Offerta</h6>
+                    <!-- testo da cancellare  -->
+                    <p id="ticket_type">offerta</p>
+                </div>
+                <div class="col">
+                    <h6>Carrozza</h6>
+                    <!-- testo da cancellare  -->
+                    <p id="seat_place">carrozza</p>
+                </div>
+                <div class="col">
+                    <h6>Codice CP</h6>
+                    <!-- testo da cancellare  -->
+                    <p id="ticket_code">codice</p>
+                </div>
+                <div class="col">
+                    <h6>Prezzo biglietto</h6>
+                    <!-- testo da cancellare  -->
+                    <p id="ticket_price">prezzo</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <!-- <div class="container bg-light p-3 text-center">
         <div class="row align-middle">
             <div class="col-12">
                 <p id="displayed_price"></p>
             </div>
         </div>
-       </div>
+    </div> -->
     <script type="text/javascript" src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

@@ -21,6 +21,8 @@ Il recap dei dati e l'output del prezzo finale va stampato in pagina.
 
 // INIZIO
 // Chiedere informazioni all'utente su km ed età
+
+/* 
 let kmInfo = parseInt(prompt("Inserisci i chilometri che desideri percorrere:"));
 let userAge = parseInt(prompt("Inserisci la tua età:"));
 
@@ -43,12 +45,15 @@ if (userAge < 18) {
     console.log("Il prezzo del tuo biglietto è: €" + (ticketPriceOld.toFixed(2)) + " a seguito di uno sconto del 40%.");
     document.getElementById("displayed_price").innerHTML = "Il prezzo del tuo biglietto è: €" + (ticketPriceOld.toFixed(2)) + " a seguito di uno sconto del 40%.";
 } else {
-    console.log("Il prezzo del tuo biglietto è: €" + (basicTicketPrice.toFixed(2))+".");
-    document.getElementById("displayed_price").innerHTML = "Il prezzo del tuo biglietto è: €" + (basicTicketPrice.toFixed(2))+".";
+    console.log("Il prezzo del tuo biglietto è: €" + (basicTicketPrice.toFixed(2)) + ".");
+    document.getElementById("displayed_price").innerHTML = "Il prezzo del tuo biglietto è: €" + (basicTicketPrice.toFixed(2)) + ".";
 }
 
 
 // arrotondare il prezzo a max due decimali - FATTO
 
 // mostrare in console e in elemento <p> in html - FATTO
+*/
+
+//BONUS:
 
