@@ -21,14 +21,15 @@ Il recap dei dati e l'output del prezzo finale va stampato in pagina.
 
 // INIZIO
 // Chiedere informazioni all'utente su km ed età
-
+let kmInfo=parseInt(prompt("Inserisci i chilometri che desideri percorrere:"));
+let userAge=parseInt(prompt("Inserisci la tua età:"));
 
 // Calcolare il prezzo del biglietto 
 
 
 // Stabilire le condizioni per applicare sconti:
 // 20% se età < 18 anni
-// 40% se età > 65 anni 
+// 40% se età > 65 anni
 
 
 // arrotondare il prezzo a max due decimali
