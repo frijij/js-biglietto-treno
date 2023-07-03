@@ -36,17 +36,19 @@ let ticketPriceOld = (basicTicketPrice * 60) / 100;
 
 if (userAge < 18) {
     // applicare il 20% di sconto se età < 18 anni
-    console.log("Il prezzo del tuo biglietto è: €" + (ticketPriceYoung.toFixed(2)) + " a seguito di uno sconto del 20%.");
+    console.log("Il prezzo del tuo biglietto è €" + (ticketPriceYoung.toFixed(2)) + " a seguito di uno sconto del 20%.");
+    document.getElementById("displayed_price").innerHTML = "Il prezzo del tuo biglietto è €" + (ticketPriceYoung.toFixed(2)) + " a seguito di uno sconto del 20%.";
 } else if (userAge > 65) {
     // applicare il 40% di sconto se età > 65 anni
-    console.log("Il prezzo del tuo biglietto è: €" + (ticketPriceOld.toFixed(2)) + " a seguito di uno sconto del 40%.")
+    console.log("Il prezzo del tuo biglietto è: €" + (ticketPriceOld.toFixed(2)) + " a seguito di uno sconto del 40%.");
+    document.getElementById("displayed_price").innerHTML = "Il prezzo del tuo biglietto è: €" + (ticketPriceOld.toFixed(2)) + " a seguito di uno sconto del 40%.";
 } else {
-    console.log("Il prezzo del tuo biglietto è: €" + (basicTicketPrice.toFixed(2))+".")
+    console.log("Il prezzo del tuo biglietto è: €" + (basicTicketPrice.toFixed(2))+".");
+    document.getElementById("displayed_price").innerHTML = "Il prezzo del tuo biglietto è: €" + (basicTicketPrice.toFixed(2))+".";
 }
 
 
 // arrotondare il prezzo a max due decimali - FATTO
 
-
-//mostrare in console e in elemento <p> in html 
+// mostrare in console e in elemento <p> in html - FATTO
 
