@@ -1,0 +1,29 @@
+/* utility classes */
+.h_100 {
+    height: 100px;
+}
+
+.bg_red {
+    background-color: red;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex_space_around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.no_bullets {
+    list-style-type: none;
+}
+
+.p_10 {
+    padding: 10px;
+}
