@@ -26,20 +26,26 @@ let userAge = parseInt(prompt("Inserisci la tua età:"));
 
 // Calcolare il prezzo del biglietto 
 let basicTicketPrice = kmInfo * 0.21
-console.log("Il prezzo del tuo biglietto è: €" + basicTicketPrice);
+console.log("Prezzo provvisorio: €" + basicTicketPrice);
+
+// Creare variabili per prezzi scontati:
+let ticketPriceYoung = (basicTicketPrice * 80) / 100;
+let ticketPriceOld = (basicTicketPrice * 60) / 100;
 
 // Stabilire le condizioni per applicare sconti:
 
 if (userAge < 18) {
     // applicare il 20% di sconto se età < 18 anni
-    console.log("Il prezzo del tuo biglietto è: €" + (basicTicketPrice * 80) / 100 + "a seguito di uno sconto del 20%.")
+    console.log("Il prezzo del tuo biglietto è: €" + (ticketPriceYoung.toFixed(2)) + " a seguito di uno sconto del 20%.");
 } else if (userAge > 65) {
     // applicare il 40% di sconto se età > 65 anni
-    console.log("Il prezzo del tuo biglietto è: €" + (basicTicketPrice * 60) / 100 + "a seguito di uno sconto del 40%.")
+    console.log("Il prezzo del tuo biglietto è: €" + (ticketPriceOld.toFixed(2)) + " a seguito di uno sconto del 40%.")
+} else {
+    console.log("Il prezzo del tuo biglietto è: €" + (basicTicketPrice.toFixed(2))+".")
 }
 
 
-// arrotondare il prezzo a max due decimali
+// arrotondare il prezzo a max due decimali - FATTO
 
 
 //mostrare in console e in elemento <p> in html 
