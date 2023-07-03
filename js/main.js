@@ -25,11 +25,14 @@ let kmInfo=parseInt(prompt("Inserisci i chilometri che desideri percorrere:"));
 let userAge=parseInt(prompt("Inserisci la tua età:"));
 
 // Calcolare il prezzo del biglietto 
-
+let basicTicketPrice = kmInfo * 0.21
+console.log("Il prezzo del tuo biglietto è: €"+basicTicketPrice);
 
 // Stabilire le condizioni per applicare sconti:
-// 20% se età < 18 anni
-// 40% se età > 65 anni
+// applicare il 20% di sconto se età < 18 anni
+
+
+// applicare il 40% di sconto se età > 65 anni
 
 
 // arrotondare il prezzo a max due decimali
